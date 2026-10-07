@@ -14,7 +14,11 @@ extern "C" void led_task()
     }
 
     for (uint8_t r = 10; r > 0; r--) {
-      led.set(0, r * 0.01f, 0);
+      led.set(r * 0.01f, 0, 0);
+      osDelay(100);
+    }
+    for (uint8_t r = 10; r > 0; r--) {
+      led.set(0, 0, r * 0.01f);
       osDelay(100);
     }
   }

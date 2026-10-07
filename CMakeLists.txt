@@ -49,6 +49,24 @@ target_sources(${CMAKE_PROJECT_NAME} PRIVATE
     applications/buzzer_task.cpp
     sp_middleware/io/led/led.cpp
     sp_middleware/io/buzzer/buzzer.cpp
+    applications/imu_task.cpp
+    sp_middleware/io/bmi088/bmi088.cpp # <- 添加这一行
+    sp_middleware/tools/mahony/mahony.cpp # <- 添加这一行
+    sp_middleware/tools/gimbal/gimbal.cpp # <- 添加这一行
+    applications/print_task.cpp
+    applications/print_task.cpp
+    sp_middleware/io/plotter/plotter.cpp
+    applications/uart_task.cpp # <- 添加这一行
+    sp_middleware/io/dbus/dbus.cpp # <- 添加这一行
+    applications/motor_task.cpp # <- 添加这一行
+    sp_middleware/io/can/can.cpp # <- 添加这一行
+    sp_middleware/motor/rm_motor/rm_motor.cpp # <- 添加这一行
+    sp_middleware/tools/pid/pid.cpp # <- 添加这一行
+    sp_middleware/tools/joint/joint_controller.cpp
+    sp_middleware/tools/math_tools/math_tools.cpp
+    sp_middleware/tools/low_pass_filter/low_pass_filter.cpp
+   
+  
 )
 
 # Add include paths
